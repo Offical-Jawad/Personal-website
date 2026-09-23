@@ -1,0 +1,53 @@
+.loading-skeleton {
+  width: 100%;
+}
+
+.skeleton-text {
+  border-radius: 4px;
+}
+
+.skeleton-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skeleton-card-image {
+  width: 100%;
+  height: 200px;
+}
+
+.skeleton-card-content {
+  padding: 20px;
+}
+
+.skeleton-title {
+  height: 24px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.skeleton-text-line {
+  height: 16px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.skeleton-image {
+  border-radius: 8px;
+}
+
+.skeleton-avatar {
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .skeleton-card-image {
+    height: 150px;
+  }
+
+  .skeleton-card-content {
+    padding: 15px;
+  }
+}

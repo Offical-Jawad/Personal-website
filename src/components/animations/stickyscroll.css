@@ -1,0 +1,58 @@
+.sticky-scroll-container {
+  position: relative;
+  padding: 50px 0;
+}
+
+.sticky-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sticky-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.sticky-card-content {
+  width: 100%;
+}
+
+.sticky-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.sticky-card h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--primary-color, #fff);
+}
+
+.sticky-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .sticky-card {
+    padding: 30px 20px;
+    min-height: 300px;
+  }
+
+  .sticky-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .sticky-card p {
+    font-size: 1rem;
+  }
+}

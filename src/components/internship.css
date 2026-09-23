@@ -1,0 +1,492 @@
+/* ================================
+   RESET & VARIABLES
+   ================================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+.internship-page {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: auto;
+  height: auto;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #111111;
+  padding: 0;
+  margin: 0;
+  overflow-x: clip;
+  box-sizing: border-box;
+}
+
+/* ================================
+   HEADER
+   ================================ */
+.intern-header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 80px 80px 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.intern-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #0a0a0a;
+}
+
+.intern-subtitle {
+  font-size: 14px;
+  color: #666666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ================================
+   INTERNSHIP LIST
+   ================================ */
+.intern-list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+/* ================================
+/* ================================
+   CARD STYLES
+   ================================ */
+.intern-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 32px;
+  border: 1.5px solid #111111;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  color: #111111;
+}
+
+/* Default Normal State (Light Card) */
+.intern-card .job-role {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+  color: #0a0a0a;
+  transition: color 0.3s ease;
+}
+
+.intern-card .company-name {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: #475569;
+  transition: color 0.3s ease;
+}
+
+.intern-card .duration-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #64748b;
+  transition: color 0.3s ease;
+}
+
+.intern-card .duration-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #0a0a0a;
+  transition: color 0.3s ease;
+}
+
+.intern-card .desc-summary {
+  font-size: 14.5px;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  color: #1e293b;
+  transition: color 0.3s ease;
+}
+
+.intern-card .intern-highlights li {
+  font-size: 14px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 20px;
+  color: #0f172a;
+  transition: color 0.3s ease;
+}
+
+.intern-card .intern-highlights li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #6c5ce7;
+  font-size: 11px;
+  top: 2px;
+  transition: color 0.3s ease;
+}
+
+.intern-card .number-box {
+  width: 48px;
+  height: 48px;
+  background: #0a0a0a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  transition: all 0.3s;
+  border: 1px solid #0a0a0a;
+}
+
+.intern-card .intern-tags .tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: #f1f5f9;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  transition: all 0.3s ease;
+}
+
+.intern-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(108, 92, 231, 0.1);
+  color: #6c5ce7;
+  border: 1px solid rgba(108, 92, 231, 0.25);
+  transition: all 0.3s ease;
+}
+
+.intern-card .corner-tl,
+.intern-card .corner-br {
+  border-color: #111111;
+}
+
+/* ==============================================
+   HOVER STATE: Black Background with Pure White Text
+   ============================================== */
+.intern-card:hover {
+  background: #0a0a0a !important;
+  color: #ffffff !important;
+  border-color: #0a0a0a !important;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Text Inside White Box: Solid Black & High-Contrast */
+.intern-card:hover .job-role,
+.intern-card .job-role {
+  color: #0a0a0a !important;
+}
+
+.intern-card:hover .company-name,
+.intern-card:hover .company-name span,
+.intern-card .company-name,
+.intern-card .company-name span {
+  color: #475569 !important;
+}
+
+.intern-card:hover .desc-summary,
+.intern-card .desc-summary {
+  color: #1e293b !important;
+}
+
+.intern-card:hover .intern-highlights li,
+.intern-card .intern-highlights li {
+  color: #0f172a !important;
+}
+
+.intern-card:hover .intern-highlights li::before,
+.intern-card .intern-highlights li::before {
+  color: #6c5ce7 !important;
+}
+
+.intern-card:hover .intern-badge,
+.intern-card .intern-badge {
+  background: rgba(108, 92, 231, 0.1) !important;
+  color: #5b49e6 !important;
+  border: 1px solid rgba(108, 92, 231, 0.25) !important;
+  font-weight: 700 !important;
+}
+
+.intern-card:hover .intern-tags .tag,
+.intern-card .intern-tags .tag {
+  background: #f1f5f9 !important;
+  color: #0a0a0a !important;
+  border: 1px solid #cbd5e1 !important;
+  font-weight: 600 !important;
+}
+
+.intern-card:hover .intern-tags .tag:hover,
+.intern-card .intern-tags .tag:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+  transform: translateY(-2px);
+}
+
+/* Outside White Box (On Black Card Area) */
+.intern-card:hover .duration-label {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.intern-card:hover .duration-value {
+  color: #ffffff !important;
+}
+
+.intern-card:hover .number-box {
+  background: #ffffff !important;
+  color: #0a0a0a !important;
+  border-color: #ffffff !important;
+}
+
+.intern-card:hover .corner-tl,
+.intern-card:hover .corner-br {
+  border-color: #ffffff !important;
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
+
+.intern-card.active {
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+}
+
+/* Card Left */
+.intern-card .card-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1;
+}
+
+.intern-card .info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+/* Card Right */
+.intern-card .card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+
+.intern-card .duration-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.intern-card .duration-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.intern-card .duration-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+/* Expandable Description */
+.intern-desc {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin-top: 0;
+}
+
+.intern-desc.show {
+  max-height: 800px;
+  opacity: 1;
+  margin-top: 18px;
+}
+
+.intern-desc .desc-summary {
+  font-size: 14.5px;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  transition: color 0.3s ease;
+}
+
+.intern-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.intern-highlights li {
+  font-size: 14px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.intern-highlights li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  color: #6c5ce7;
+  font-size: 11px;
+  top: 2px;
+  transition: color 0.3s ease;
+}
+
+.intern-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.intern-tags .tag {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Corner Decorations */
+.intern-card .corner-tl,
+.intern-card .corner-br {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid currentColor;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.intern-card .corner-tl {
+  top: 8px;
+  left: 8px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.intern-card .corner-br {
+  bottom: 8px;
+  right: 8px;
+  border-left: none;
+  border-top: none;
+}
+
+.intern-card:hover .corner-tl,
+.intern-card:hover .corner-br {
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
+
+/* Bottom line */
+.intern-bottom-line {
+  width: 100%;
+  height: 20px;
+  background: #000000;
+  margin-top: 80px;
+  box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .intern-header {
+    padding: 60px 20px 0;
+    margin-bottom: 40px;
+  }
+
+  .intern-title {
+    font-size: 38px;
+  }
+
+  .intern-list {
+    padding: 0 20px;
+    gap: 16px;
+  }
+
+  .intern-card {
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .intern-card .card-right {
+    padding-left: 0;
+    align-items: flex-start;
+  }
+
+  .intern-card .duration-wrapper {
+    align-items: flex-start;
+  }
+
+  .intern-card .number-box {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .intern-card .job-role {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intern-title {
+    font-size: 30px;
+  }
+
+  .intern-card {
+    padding: 20px 16px;
+  }
+}

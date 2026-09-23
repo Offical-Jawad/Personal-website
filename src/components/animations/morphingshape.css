@@ -1,0 +1,27 @@
+.morphing-shape-container {
+  position: fixed;
+  top: -10%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(40px);
+}
+
+@media (max-width: 768px) {
+  .morphing-shape-container {
+    width: 400px;
+    height: 400px;
+    top: -5%;
+    right: -10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .morphing-shape-container {
+    width: 300px;
+    height: 300px;
+  }
+}
