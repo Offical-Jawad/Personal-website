@@ -136,6 +136,9 @@ const Resume = () => {
               <span className="rv-sep">|</span>
               <span>GitHub:&nbsp;</span>
               <a href="https://github.com/Offical-Jawad" target="_blank" rel="noopener noreferrer">offical-Jawad</a>
+              <span className="rv-sep">|</span>
+              <span>Portfolio:&nbsp;</span>
+              <a href="https://personal-website-yk6d.vercel.app/" target="_blank" rel="noopener noreferrer">personal-portfolio</a>
             </div>
           </header>
 
