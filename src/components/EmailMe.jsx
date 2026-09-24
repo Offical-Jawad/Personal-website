@@ -2,6 +2,17 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./emailme.css";
 import { aosAnimations, withDelay } from "../utils/animations";
+import {
+  FaArrowLeft,
+  FaEnvelope,
+  FaCopy,
+  FaCheck,
+  FaPaperPlane,
+  FaEnvelopeOpenText,
+  FaComments,
+  FaLinkedinIn,
+  FaArrowRight,
+} from "react-icons/fa6";
 
 const EmailMe = () => {
   const [formData, setFormData] = useState({
@@ -64,7 +75,7 @@ const EmailMe = () => {
       {/* Header */}
       <header className="about-header" {...aosAnimations.fadeDown}>
         <Link to="/" className="back-btn">
-          <span className="back-icon">←</span>
+          <span className="back-icon"><FaArrowLeft /></span>
           <span>Back to Home</span>
         </Link>
         <div className="logo">
@@ -76,7 +87,9 @@ const EmailMe = () => {
       {/* Hero Section */}
       <section className="emailme-hero">
         <div className="hero-content">
-          <div className="email-icon" {...aosAnimations.zoomIn}>📧</div>
+          <div className="email-icon" {...aosAnimations.zoomIn}>
+            <FaEnvelope />
+          </div>
           <h1 className="page-title" {...withDelay(aosAnimations.fadeUp, 100)}>EMAIL ME</h1>
           <p className="page-subtitle" {...withDelay(aosAnimations.fadeUp, 200)}>
             Get in touch directly through email. I'll respond within 24 hours.
@@ -90,7 +103,15 @@ const EmailMe = () => {
                 className={`copy-btn ${copied ? "copied" : ""}`}
                 onClick={copyEmail}
               >
-                {copied ? "✓ Copied!" : "📋 Copy"}
+                {copied ? (
+                  <>
+                    <FaCheck /> Copied!
+                  </>
+                ) : (
+                  <>
+                    <FaCopy /> Copy
+                  </>
+                )}
               </button>
             </div>
           </div>
@@ -168,7 +189,9 @@ const EmailMe = () => {
 
             <button type="submit" className="submit-btn" disabled={loading}>
               <span>{loading ? "Sending..." : "Send Email"}</span>
-              <span className="btn-arrow">→</span>
+              <span className="btn-arrow" style={{ display: 'inline-flex', alignItems: 'center' }}>
+                <FaPaperPlane />
+              </span>
             </button>
           </form>
         </div>
@@ -180,17 +203,17 @@ const EmailMe = () => {
           <h2 className="section-title" {...aosAnimations.fadeUp}>Other Ways to Connect</h2>
           <div className="contact-grid">
             <Link to="/contact-form" className="contact-card" {...withDelay(aosAnimations.fadeUp, 100)}>
-              <div className="card-icon">📝</div>
+              <div className="card-icon"><FaEnvelopeOpenText /></div>
               <h3>Contact Form</h3>
               <p>Fill out our detailed contact form</p>
-              <span className="card-arrow">→</span>
+              <span className="card-arrow"><FaArrowRight /></span>
             </Link>
 
             <Link to="/lets-talk" className="contact-card" {...withDelay(aosAnimations.fadeUp, 200)}>
-              <div className="card-icon">💬</div>
+              <div className="card-icon"><FaComments /></div>
               <h3>Start a Project</h3>
               <p>Discuss your project requirements</p>
-              <span className="card-arrow">→</span>
+              <span className="card-arrow"><FaArrowRight /></span>
             </Link>
 
             <a
@@ -200,10 +223,10 @@ const EmailMe = () => {
               className="contact-card"
               {...withDelay(aosAnimations.fadeUp, 300)}
             >
-              <div className="card-icon">💼</div>
+              <div className="card-icon"><FaLinkedinIn /></div>
               <h3>LinkedIn</h3>
               <p>Connect with me professionally</p>
-              <span className="card-arrow">↗</span>
+              <span className="card-arrow"><FaArrowRight /></span>
             </a>
           </div>
         </div>

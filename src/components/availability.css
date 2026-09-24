@@ -467,8 +467,17 @@
 }
 
 .service-icon {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
+  color: #00b894;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.service-item:hover .service-icon {
+  transform: scale(1.1);
+  color: #070707;
 }
 
 .service-item h3 {
@@ -519,7 +528,7 @@
 }
 
 .timeline-icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -527,6 +536,14 @@
   height: 60px;
   background: #fafafa;
   border-radius: 12px;
+  color: #070707;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-icon {
+  background: #070707;
+  color: #00b894;
+  transform: scale(1.05);
 }
 
 .timeline-content h4 {

@@ -251,7 +251,7 @@ const Projects = () => {
           <motion.h2 variants={fadeInUp}>Have a project in mind?</motion.h2>
           <motion.p variants={fadeInUp}>Let's collaborate and create something amazing together.</motion.p>
           <motion.div variants={scaleIn}>
-            <Link to="/lets-talk" className="btn btn-primary magnetic">
+            <Link to="/contact" className="btn btn-primary magnetic">
               <span className="btn-text">Get in Touch</span>
               <span className="btn-icon">→</span>
             </Link>

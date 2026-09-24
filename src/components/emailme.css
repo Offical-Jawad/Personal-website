@@ -98,8 +98,12 @@
 }
 
 .email-icon {
-  font-size: 80px;
+  font-size: 64px;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #070707;
 }
 
 .page-title {
@@ -144,6 +148,9 @@
 }
 
 .copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 0.75rem 1.5rem;
   background: #fff;
   color: #070707;
@@ -346,8 +353,17 @@
 }
 
 .card-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover .card-icon {
+  transform: scale(1.15);
+  color: #fff;
 }
 
 .contact-card h3 {

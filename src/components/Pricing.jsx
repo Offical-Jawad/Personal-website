@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./pricing.css";
 import { aosAnimations, withDelay } from "../utils/animations";
+import { FaWrench, FaBolt, FaPalette, FaMobileScreen } from "react-icons/fa6";
 
 const Pricing = () => {
   return (
@@ -110,25 +111,33 @@ const Pricing = () => {
           <h2 {...aosAnimations.fadeUp}>Additional Services</h2>
           <div className="services-grid">
             <div className="service-card" {...withDelay(aosAnimations.fadeUp, 100)}>
-              <div className="service-icon">🔧</div>
+              <div className="service-icon">
+                <FaWrench />
+              </div>
               <h4>Website Maintenance</h4>
               <p className="service-price">$50/month</p>
               <p className="service-desc">Regular updates, backups, and security monitoring</p>
             </div>
             <div className="service-card" {...withDelay(aosAnimations.fadeUp, 200)}>
-              <div className="service-icon">⚡</div>
+              <div className="service-icon">
+                <FaBolt />
+              </div>
               <h4>Performance Optimization</h4>
               <p className="service-price">$200/project</p>
               <p className="service-desc">Speed optimization and performance improvements</p>
             </div>
             <div className="service-card" {...withDelay(aosAnimations.fadeUp, 300)}>
-              <div className="service-icon">🎨</div>
+              <div className="service-icon">
+                <FaPalette />
+              </div>
               <h4>UI/UX Design</h4>
               <p className="service-price">$300/project</p>
               <p className="service-desc">Custom design mockups and prototypes</p>
             </div>
             <div className="service-card" {...withDelay(aosAnimations.fadeUp, 400)}>
-              <div className="service-icon">📱</div>
+              <div className="service-icon">
+                <FaMobileScreen />
+              </div>
               <h4>Mobile App Development</h4>
               <p className="service-price">Custom Quote</p>
               <p className="service-desc">React Native mobile applications</p>

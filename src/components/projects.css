@@ -453,24 +453,37 @@
   line-height: 1.8;
 }
 
-.btn-primary {
+.projects-cta .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
   padding: 1.25rem 3rem;
-  background: white;
-  color: #070707;
+  background: #ffffff;
+  color: #000000 !important;
   text-decoration: none;
   border-radius: 50px;
   font-size: 1.1rem;
   font-weight: 700;
   transition: all 0.3s ease;
+  border: 1.5px solid transparent;
 }
 
-.btn-primary:hover {
-  background: #f5f5f5;
+.projects-cta .btn-primary .btn-text,
+.projects-cta .btn-primary .btn-icon {
+  color: #000000 !important;
+  transition: color 0.3s ease;
+}
+
+.projects-cta .btn-primary:hover {
+  background: #ffffff !important;
+  color: #000000 !important;
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4);
+}
+
+.projects-cta .btn-primary:hover .btn-text,
+.projects-cta .btn-primary:hover .btn-icon {
+  color: #000000 !important;
 }
 
 /* ============ REVEAL ANIMATIONS ============ */

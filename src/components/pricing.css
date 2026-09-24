@@ -374,8 +374,18 @@
 }
 
 .service-icon {
-  font-size: 48px;
-  margin-bottom: 15px;
+  font-size: 38px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c5ce7;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.15);
+  color: #070707;
 }
 
 .service-card h4 {

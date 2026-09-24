@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
 import "./availability.css";
 import { aosAnimations, withDelay } from "../utils/animations";
+import {
+  FaArrowLeft,
+  FaCheck,
+  FaRocket,
+  FaBolt,
+  FaBriefcase,
+  FaMobileScreen,
+  FaGlobe,
+  FaCartShopping,
+  FaLaptopCode,
+} from "react-icons/fa6";
 
 const Availability = () => {
   return (
@@ -14,7 +25,7 @@ const Availability = () => {
       {/* Header */}
       <header className="about-header" {...aosAnimations.fadeDown}>
         <Link to="/" className="back-btn">
-          <span className="back-icon">←</span>
+          <span className="back-icon"><FaArrowLeft /></span>
           <span>Back to Home</span>
         </Link>
         <div className="logo">
@@ -50,7 +61,9 @@ const Availability = () => {
               <div className="status-info">
                 <div className="info-item">
                   <span className="info-label">Accepting New Projects</span>
-                  <span className="info-value">✓ Yes</span>
+                  <span className="info-value" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                    <FaCheck style={{ color: '#00b894' }} /> Yes
+                  </span>
                 </div>
                 <div className="info-item">
                   <span className="info-label">Response Time</span>
@@ -107,19 +120,19 @@ const Availability = () => {
             <p className="card-desc">Available collaboration models</p>
             <div className="services-grid">
               <div className="service-item" {...withDelay(aosAnimations.zoomIn, 100)}>
-                <div className="service-icon">🚀</div>
+                <div className="service-icon"><FaRocket /></div>
                 <h3>Full-Time Projects</h3>
                 <p>Dedicated focus on your project from start to finish with full commitment</p>
                 <span className="service-status">Available</span>
               </div>
               <div className="service-item" {...withDelay(aosAnimations.zoomIn, 200)}>
-                <div className="service-icon">⚡</div>
+                <div className="service-icon"><FaBolt /></div>
                 <h3>Part-Time Work</h3>
                 <p>Flexible hours for ongoing maintenance, updates, and smaller tasks</p>
                 <span className="service-status">Available</span>
               </div>
               <div className="service-item" {...withDelay(aosAnimations.zoomIn, 300)}>
-                <div className="service-icon">💼</div>
+                <div className="service-icon"><FaBriefcase /></div>
                 <h3>Consultation</h3>
                 <p>Expert advice and technical guidance for your development team</p>
                 <span className="service-status">Available</span>
@@ -133,7 +146,7 @@ const Availability = () => {
             <p className="card-desc">Average turnaround time for different project types</p>
             <div className="timeline-list">
               <div className="timeline-item" {...withDelay(aosAnimations.fadeLeft, 100)}>
-                <div className="timeline-icon">📱</div>
+                <div className="timeline-icon"><FaMobileScreen /></div>
                 <div className="timeline-content">
                   <h4>Landing Page</h4>
                   <p className="timeline-duration">1-2 Weeks</p>
@@ -141,7 +154,7 @@ const Availability = () => {
                 </div>
               </div>
               <div className="timeline-item" {...withDelay(aosAnimations.fadeLeft, 200)}>
-                <div className="timeline-icon">🌐</div>
+                <div className="timeline-icon"><FaGlobe /></div>
                 <div className="timeline-content">
                   <h4>Multi-Page Website</h4>
                   <p className="timeline-duration">3-4 Weeks</p>
@@ -149,7 +162,7 @@ const Availability = () => {
                 </div>
               </div>
               <div className="timeline-item" {...withDelay(aosAnimations.fadeLeft, 300)}>
-                <div className="timeline-icon">🛒</div>
+                <div className="timeline-icon"><FaCartShopping /></div>
                 <div className="timeline-content">
                   <h4>E-Commerce Platform</h4>
                   <p className="timeline-duration">6-8 Weeks</p>
@@ -157,7 +170,7 @@ const Availability = () => {
                 </div>
               </div>
               <div className="timeline-item" {...withDelay(aosAnimations.fadeLeft, 400)}>
-                <div className="timeline-icon">💻</div>
+                <div className="timeline-icon"><FaLaptopCode /></div>
                 <div className="timeline-content">
                   <h4>Web Application</h4>
                   <p className="timeline-duration">8-12 Weeks</p>

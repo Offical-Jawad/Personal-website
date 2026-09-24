@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Loader from "./components/Loader"
 import Home from "./components/Home"
 import Contact from "./components/Contact"
@@ -49,6 +49,11 @@ const AnimatedPage = ({ children }) => {
 const AnimatedRoutes = () => {
   const location = useLocation()
 
+  // Scroll to top whenever the route/page changes
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
@@ -64,7 +69,13 @@ const AnimatedRoutes = () => {
           </AnimatedPage>
         } />
 
-        {/* Full Contact Page */}
+        {/* Full Contact Page - supports both /contact and /contact-form */}
+        <Route path="/contact" element={
+          <AnimatedPage>
+            <Contact />
+            <Footer />
+          </AnimatedPage>
+        } />
         <Route path="/contact-form" element={
           <AnimatedPage>
             <Contact />
