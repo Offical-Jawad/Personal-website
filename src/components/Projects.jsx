@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./projects.css";
 import { viewport } from "../utils/animationVariants";
-import { 
-  fadeInUp, 
-  slideRightToLeft, 
-  staggerContainer, 
+import {
+  fadeInUp,
+  slideRightToLeft,
+  staggerContainer,
   staggerContainerFast,
   scaleIn,
   cardFlipVariant
@@ -24,72 +24,83 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "VSDMS – Vehicle Speed Detection & Management System",
+      category: "web",
+      description: "Modern traffic monitoring system supporting vehicle speed tracking, interactive KPI analytics, activity management, and real-time alerts via a centralized dashboard.",
+      image: "/vsdms-preview.jpg",
+      tags: ["React.js", "Vite", "Dashboard", "Traffic Monitoring"],
+      year: "2026",
+      details: "Centralized Vehicle Speed Detection & Management System designed to support real-time vehicle speed tracking, traffic flow analytics, interactive KPI summaries, activity records, and responsive dark-themed dashboard modules with glassmorphism and cyan/blue accents.",
+      link: "/project/vsdms-details"
+    },
+    {
+      id: 2,
       title: "j.store E-Commerce Platform",
       category: "web",
       description: "Modern fashion shopping experience featuring multi-criteria live filtering, interactive cart & wishlist drawer, instant search, and a streamlined responsive checkout flow.",
       image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=400&q=80",
       tags: ["React", "Context API", "E-Commerce"],
-      year: "2024",
+      year: "2025",
       details: "A comprehensive e-commerce platform built with React.js and Context API. Features real-time cart calculations, persistent wishlist storage, advanced multi-facet product filtering by category, gender, and price range, coupled with high-speed search and mobile-optimized responsive UX.",
       link: "/project/jstore-details"
     },
     {
-      id: 2,
+      id: 3,
       title: "Furniro — Modern Furniture & Living",
       category: "web",
       description: "Modern furniture e-commerce website designed to provide a clean, elegant, and user-friendly shopping experience with category filtering, cart, wishlist, and quick preview.",
       image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80",
       tags: ["React", "Vite", "Tailwind CSS", "E-Commerce"],
-      year: "2024",
+      year: "2026",
       details: "Furniro is a modern furniture and home living e-commerce website built with React, Vite, and Tailwind CSS. Features deep green and warm golden aesthetics, category-based browsing (Living Room, Bedroom, Chairs, Office, Lighting, Sofas), wishlist, shopping cart, quick preview modals, and product reviews UI.",
       link: "/project/furniro-details"
     },
     {
-      id: 3,
+      id: 4,
       title: "Snow Removal Service Website",
       category: "web",
       description: "Professional winter service platform featuring automated scheduling, interactive coverage mapping, live quote calculation, and emergency service dispatch.",
       image: "https://images.unsplash.com/photo-1477346611705-65d1883cee1e?auto=format&fit=crop&w=400&q=80",
       tags: ["Node.js", "Express", "EJS"],
-      year: "2024",
+      year: "2025",
       details: "Full-scale service platform developed with Node.js and Express. Features online slot booking, interactive geo-radius coverage map, automated price estimators for residential and commercial contracts, customer reviews, and integrated email booking confirmation.",
       link: "/project/snow-removal-details"
     },
     {
-      id: 4,
+      id: 5,
       title: "Personal Portfolio Website",
       category: "web",
       description: "Creative developer portfolio showcasing interactive 3D card flips, dark-mode styling, fluid Framer Motion micro-animations, and full SEO optimization.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80",
       tags: ["React", "UI/UX", "SEO"],
-      year: "2024",
+      year: "2026",
       details: "Modern developer portfolio built with React and Framer Motion. Engineered with 100% Lighthouse SEO best practices, interactive project detail modals, silky smooth page transitions, responsive layout hierarchy, and direct client contact workflows.",
       link: "/project/portfolio-details"
     },
     {
-      id: 5,
+      id: 6,
       title: "NovaHire - Landing Page",
       category: "web",
       description: "High-converting talent recruitment platform landing page featuring sleek purple gradient styling, partner social proof badges, and interactive value tiers.",
       image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&q=80",
       tags: ["Landing Page", "React", "Modern UI"],
-      year: "2024",
+      year: "2025",
       details: "Conversion-focused landing page for NovaHire connecting top marketing leaders with high-growth companies. Highlights an engaging hero section with 'Unlock Top Marketing Talent You Thought Was Out of Reach' headline, partner trust showcases (Clearwave, StartGrow, Luma, ProSign), and CTA-driven funnel architecture.",
       link: "#"
     },
     {
-      id: 6,
+      id: 7,
       title: "CRUD Posts Application",
       category: "app",
       description: "Full-stack content management system featuring MongoDB data persistence, RESTful API routing, server-side validation, and dynamic EJS view rendering.",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80",
       tags: ["Node.js", "Express", "MongoDB", "EJS"],
-      year: "2024",
+      year: "2025",
       details: "End-to-end CRUD web application constructed with Express.js and MongoDB using Mongoose ODM. Features user account management, post authoring with rich previews, method-override RESTful routes for updates and deletions, and secure server-side form validation.",
       link: "#"
     },
     {
-      id: 7,
+      id: 8,
       title: "M Javad Aslam - Portfolio",
       category: "web",
       description: "Clean editorial portfolio featuring custom responsive CSS, profile showcase card, curated project deep dives, and an interactive contact interface.",
@@ -100,7 +111,7 @@ const Projects = () => {
       link: "#"
     },
     {
-      id: 8,
+      id: 9,
       title: "React Calculator App",
       category: "app",
       description: "Modern mathematical calculator application featuring real-time calculation history, square root & percentage logic, backspace editing, and tactile UI feedback.",
@@ -115,7 +126,7 @@ const Projects = () => {
   return (
     <div className={`projects-wrapper ${loaded ? "page-loaded" : ""}`}>
       {/* Header */}
-      <motion.header 
+      <motion.header
         className="projects-header"
         initial="hidden"
         whileInView="visible"
@@ -133,7 +144,7 @@ const Projects = () => {
       </motion.header>
 
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
         className="projects-hero"
         initial="hidden"
         whileInView="visible"
@@ -153,7 +164,7 @@ const Projects = () => {
       </motion.section>
 
       {/* Projects Grid */}
-      <motion.section 
+      <motion.section
         className="projects-grid"
         initial="hidden"
         whileInView="visible"
@@ -161,8 +172,8 @@ const Projects = () => {
         variants={staggerContainerFast}
       >
         {projects.map((project, index) => (
-          <div 
-            key={project.id} 
+          <div
+            key={project.id}
             className="project-card-wrapper"
             style={{ perspective: "1000px" }}
           >
@@ -170,7 +181,7 @@ const Projects = () => {
               className={`project-card-flip ${flippedCard === project.id ? "flipped" : ""}`}
               variants={slideRightToLeft}
               onClick={() => setFlippedCard(flippedCard === project.id ? null : project.id)}
-              style={{ 
+              style={{
                 transformStyle: "preserve-3d",
                 cursor: "pointer"
               }}
@@ -190,7 +201,7 @@ const Projects = () => {
                     <span className="project-year">{project.year}</span>
                   </div>
                   <p className="project-desc">{project.description}</p>
-                  
+
                   <div className="project-tags">
                     {project.tags.map((tag, i) => (
                       <span key={i} className="tag">
@@ -202,9 +213,9 @@ const Projects = () => {
               </div>
 
               {/* BACK SIDE */}
-              <div 
-                className="card-back" 
-                style={{ 
+              <div
+                className="card-back"
+                style={{
                   backfaceVisibility: "hidden",
                   transform: "rotateY(180deg)",
                   position: "absolute",
@@ -217,15 +228,15 @@ const Projects = () => {
                 <div className="card-back-content">
                   <h3 className="back-title">{project.title}</h3>
                   <p className="project-details-back">{project.details}</p>
-                  
+
                   <div className="back-tags">
                     {project.tags.map((tag, i) => (
                       <span key={i} className="tag-back">{tag}</span>
                     ))}
                   </div>
-                  
-                  <Link 
-                    to={project.link} 
+
+                  <Link
+                    to={project.link}
                     className="view-btn-back"
                     onClick={(e) => e.stopPropagation()}
                   >
@@ -240,7 +251,7 @@ const Projects = () => {
       </motion.section>
 
       {/* CTA Section */}
-      <motion.section 
+      <motion.section
         className="projects-cta reveal"
         initial="hidden"
         whileInView="visible"

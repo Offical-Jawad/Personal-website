@@ -211,21 +211,22 @@ const Resume = () => {
               </ul>
             </div>
 
-            {/* ── PAGE BREAK — Portfolio starts on Page 2 ── */}
+            {/* ── PAGE BREAK — VSDMS starts on Page 2 ── */}
             <div ref={breakRef} className="rv-page-break" />
 
-            {/* Project 3 — Portfolio */}
+            {/* Project 3 — VSDMS */}
             <div className="rv-project rv-project-last">
               <div className="rv-project-header">
                 <span className="rv-project-title">
-                  Developer Portfolio Website
-                  <span className="rv-project-tech"> (React.js, JavaScript, CSS3)</span>
+                  VSDMS – Vehicle Speed Detection &amp; Management System
+                  <span className="rv-project-tech"> (React.js, Vite, JavaScript, CSS3)</span>
                 </span>
-                <span className="rv-project-date">2025</span>
+                <span className="rv-project-date">2026</span>
               </div>
               <ul className="rv-bullets">
-                <li>Designed and deployed a modern personal portfolio showcasing web engineering projects, technical skill sets, and personal achievements.</li>
-                <li>Utilized modular React component structures and optimized state management to deliver a fast-loading UI, achieving a <strong>95+ Performance Score</strong>.</li>
+                <li>Architected and developed a smart traffic monitoring dashboard for real-time vehicle speed tracking, telemetry analytics, and automated violation alerts.</li>
+                <li>Designed reusable UI components, interactive KPI summary cards, and activity tracking modules with dark-themed glassmorphism and responsive layouts.</li>
+                <li>Streamlined centralized data management screens for traffic records, improving operator monitoring workflow and situational awareness by <strong>70%</strong>.</li>
               </ul>
             </div>
           </section>
@@ -263,10 +264,38 @@ const Resume = () => {
               <span className="rv-exp-date">Jun 2026 – Dec 2026</span>
             </div>
             <ul className="rv-bullets">
-              <li>Worked on a Real ERP / GST ERP system supporting multi-company operations, with company-specific data management and permission controls.</li>
-              <li>Contributed to 4 ERP projects, developing and maintaining modules for sales, purchases, accounts, inventory, reporting, and other business workflows using Laravel, PHP, MySQL, and JavaScript.</li>
-              <li>Implemented and maintained RESTful APIs, role-based permissions, company-level access controls, bug fixes, and performance improvements across ERP applications.</li>
+              <li>
+                Worked on a Real ERP / GST ERP system supporting multi-company
+                operations, company registration, company-specific data management,
+                and secure permission controls.
+              </li>
+
+              <li>
+                Contributed to 4 ERP projects, developing and maintaining modules
+                for company registration and management, sales, purchases, accounts,
+                inventory, reporting, and other business workflows using Laravel,
+                PHP, MySQL, and JavaScript.
+              </li>
+
+              <li>
+                Implemented and maintained RESTful APIs, role-based permissions,
+                company-level access controls, and user permission management to
+                help ensure data isolation and prevent unauthorized cross-company
+                access.
+              </li>
+
+              <li>
+                Worked on multi-company workflows, including company-specific user
+                access, data handling, and permission validation across ERP modules.
+              </li>
+
+              <li>
+                Contributed to debugging, bug fixes, code maintenance, and
+                performance improvements to enhance ERP application reliability
+                and usability.
+              </li>
             </ul>
+
           </section>
 
           {/* ADDITIONAL INFORMATION */}

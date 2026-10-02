@@ -21,6 +21,7 @@ import JStoreDetails from "./components/JStoreDetails"
 import PortfolioDetails from "./components/PortfolioDetails"
 import SnowRemovalDetails from "./components/SnowRemovalDetails"
 import FurniroDetails from "./components/FurniroDetails"
+import VSDMSDetails from "./components/VSDMSDetails"
 import { pageTransition } from './utils/animationVariants'
 
 // Global components
@@ -175,6 +176,14 @@ const AnimatedRoutes = () => {
         <Route path="/project/furniro-details" element={
           <AnimatedPage>
             <FurniroDetails />
+            <Footer />
+          </AnimatedPage>
+        } />
+
+        {/* VSDMS Details Page */}
+        <Route path="/project/vsdms-details" element={
+          <AnimatedPage>
+            <VSDMSDetails />
             <Footer />
           </AnimatedPage>
         } />

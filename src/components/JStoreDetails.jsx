@@ -35,7 +35,7 @@ const JStoreDetails = () => {
             </div>
             <div className="meta-item">
               <span className="meta-label">Year</span>
-              <span className="meta-value">2024</span>
+              <span className="meta-value">2025</span>
             </div>
             <div className="meta-item">
               <span className="meta-label">Platform</span>
