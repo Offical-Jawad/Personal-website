@@ -67,6 +67,16 @@ const Skills = () => {
         { name: "REST API", level: 85, icon: "🔌" },
       ],
     },
+    ai: {
+      title: "AI & Chatbot",
+      skills: [
+        { name: "AI Chatbots", level: 88, icon: "🤖" },
+        { name: "Conversational AI", level: 85, icon: "💬" },
+        { name: "AI API Integration", level: 86, icon: "⚡" },
+        { name: "Prompt Engineering", level: 85, icon: "🧠" },
+        { name: "Python for AI", level: 80, icon: "🐍" },
+      ],
+    },
     tools: {
       title: "Tools & Technologies",
       skills: [

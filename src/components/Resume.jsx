@@ -122,7 +122,7 @@ const Resume = () => {
           {/* NAME & CONTACT */}
           <header className="rv-header">
             <h1 className="rv-name">MUHAMMAD JAWAD</h1>
-            <p className="rv-subtitle">(MERN Stack | PHP | Laravel | Python | Real ERP/GST ERP | Multi-Company ERP Development)</p>
+            <p className="rv-subtitle">AI Chatbot | MERN Stack | React.js | Node.js | PHP | Laravel | Python | Real ERP/GST ERP | Multi-Company ERP</p>
             <div className="rv-contact-row">
               <span>Gujranwala, Pakistan</span>
               <span className="rv-sep">|</span>
@@ -147,13 +147,13 @@ const Resume = () => {
             <h2 className="rv-section-title">PROFESSIONAL SUMMARY</h2>
             <p className="rv-summary">
               BS (IT) student and Full-Stack Developer specializing in the MERN stack
-              (React.js, Node.js, Express, MongoDB), PHP, Laravel, and Python. Experienced
-              in developing responsive, scalable web applications, RESTful APIs,
-              and real-world ERP/GST ERP systems with multi-company data and permission management.
-              Skilled in building dashboards, authentication systems, database-driven applications,
-              and optimizing web performance for smooth user experiences. Proven ability to write clean,
-              maintainable code using modern technologies and UI tools such as Tailwind CSS and
-              TypeScript.
+              (React.js, Node.js, Express, MongoDB), PHP, Laravel, Python, and AI Chatbot
+              development. Experienced in developing responsive, scalable web
+              applications, RESTful APIs, AI-powered chatbots, and real-world ERP/GST
+              ERP systems with multi-company data and permission management. Skilled
+              in building dashboards, authentication systems, database-driven
+              applications, and optimizing web performance for smooth user experiences. Proven ability to write clean, maintainable code using modern technologies and UI tools such as Tailwind CSS and TypeScript.
+
 
             </p>
           </section>
@@ -163,9 +163,16 @@ const Resume = () => {
             <h2 className="rv-section-title">SKILLS</h2>
             <ul className="rv-skills-list">
               <li><strong>Frontend Development:</strong> React.js, Next.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, Tailwind CSS, Bootstrap, Responsive Web Design</li>
+
               <li><strong>Backend &amp; Databases:</strong> Node.js, Express.js, PHP, Laravel, Python, RESTful APIs, JWT Authentication, CRUD Operations, MongoDB, Mongoose, MySQL, Firebase</li>
+
+              <li><strong>AI &amp; Chatbot Development:</strong> AI Chatbots, AI Integration, Conversational AI, API Integration, AI-Powered Web Applications</li>
+
+              <li><strong>ERP Development:</strong> Real ERP/GST ERP, Multi-Company ERP, Company-Specific Data &amp; Permission Management, Sales, Purchase, Inventory &amp; Accounts Modules</li>
+
               <li><strong>Tools &amp; Technologies:</strong> Git, GitHub, VS Code, Postman, Figma, Vercel, Netlify, Heroku</li>
-              <li><strong>Core Competencies:</strong> Full Stack Web Development, API Integration, Database Design, Web Performance Optimization, MVC Architecture</li>
+
+              <li><strong>Core Competencies:</strong> Full Stack Web Development, AI Chatbot Development, API Integration, Database Design, Web Performance Optimization, MVC Architecture</li>
             </ul>
           </section>
 

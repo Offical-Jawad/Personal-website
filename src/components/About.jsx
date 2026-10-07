@@ -29,8 +29,8 @@ const About = () => {
               <span className="highlight">Experiences</span>
             </h1>
             <p className="about-intro" {...withDelay(aosAnimations.fadeUp, 200)}>
-              I'm Jawad Aslam, a passionate web designer and developer dedicated to
-              crafting beautiful, functional, and user-centered digital experiences.
+              I'm Jawad Aslam, a passionate full-stack developer and AI chatbot specialist
+              dedicated to crafting beautiful, functional, and user-centered digital experiences.
             </p>
           </div>
         </div>
@@ -51,8 +51,8 @@ const About = () => {
               <p>
                 With over 2 years of experience in web design and development, I specialize
                 in creating seamless digital experiences that combine aesthetic appeal with
-                functional excellence. My technical expertise includes PHP, Laravel, Python,
-                JavaScript, React.js, HTML5, CSS3, and modern web technologies.
+                functional excellence. My technical expertise includes AI Chatbot development,
+                PHP, Laravel, Python, JavaScript, React.js, Node.js, HTML5, CSS3, and modern web technologies.
               </p>
 
               <p>
@@ -67,8 +67,8 @@ const About = () => {
                 I've had the privilege of working with diverse clients across various
                 industries, including Real Estate, Accounting, Business Management, and
                 Multi-Company/Multi-Tenant systems. I help businesses bring their digital
-                visions to life by developing customized web applications, management
-                systems, dashboards, and scalable business solutions that improve efficiency
+                visions to life by developing intelligent AI chatbots, customized web applications,
+                management systems, dashboards, and scalable business solutions that improve efficiency
                 and support long-term growth.
               </p>
 
@@ -103,6 +103,7 @@ const About = () => {
               <div className="skill-card" {...withDelay(aosAnimations.fadeUp, 200)}>
                 <h3>Development</h3>
                 <ul>
+                  <li>AI Chatbots / Conversational AI</li>
                   <li>Python</li>
                   <li>PHP</li>
                   <li>Laravel</li>
