@@ -79,7 +79,7 @@ const Home = () => {
     { label: "Contact", desc: "Get in touch", href: "/contact-form", isRoute: true },
   ];
 
-  const skills = ["WEB DESIGN",  "DEVELOPMENT", "WEBFLOW", "BRANDING", "UI/UX", "FIGMA", "REACT", "MOTION"];
+  const skills = ["WEB DESIGN", "DEVELOPMENT", "AI CHATBOT", "WEBFLOW", "BRANDING", "UI/UX", "FIGMA", "REACT", "MOTION"];
 
 
 
@@ -176,6 +176,7 @@ const Home = () => {
               <TypingText
                 texts={[
                   "Full-Stack Web Developer",
+                  "AI Chatbot Developer",
                   "Frontend Architecture Engineer",
                   "React & MERN Specialist",
                   "UI/UX & Motion Enthusiast"
@@ -187,7 +188,8 @@ const Home = () => {
             </span>
           </motion.div>
           <motion.p className="hero-desc reveal delay-4" variants={fadeInUp}>
-            I'm a <strong className="text-highlight">full-stack web developer</strong>, and{" "}
+            I'm a <strong className="text-highlight">full-stack web developer</strong>,{" "}
+            <strong className="text-highlight">AI chatbot developer</strong>, and{" "}
             <strong className="text-highlight">creative problem solver</strong> building fast,
             scalable digital experiences for forward-thinking brands.
           </motion.p>
@@ -203,6 +205,10 @@ const Home = () => {
             <li>
               <span className="check-icon">✓</span>
               <span>RESTful APIs & backend integrations</span>
+            </li>
+            <li>
+              <span className="check-icon">✓</span>
+              <span>Intelligent AI Chatbots & smart integrations</span>
             </li>
           </motion.ul>
 
